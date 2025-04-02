@@ -1,3 +1,60 @@
+html {
+  font-family: Roboto, sans-serif;
+
+  --highlight-color: #00acdc;
+}
+
 body {
   margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  width: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  line-height: 100%;
+}
+
+ul.list li {
+  height: 60px;
+  margin: 0 8px;
+  display: flex;
+  text-transform: uppercase;
+}
+
+ul.list li a {
+  height: 60px;
+}
+
+ul.list li a:link {
+  text-decoration: none;
+  color: black;
+}
+
+ul.list li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul.list li a:hover {
+  color: var(--highlight-color);
+}
+
+ul.list li a.is-active {
+  color: var(--highlight-color);
+  position: relative;
+}
+
+.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--highlight-color);
+  border-radius: 8px;
 }
