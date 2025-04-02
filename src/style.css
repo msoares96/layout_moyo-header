@@ -1,5 +1,5 @@
 html {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 
   --highlight-color: #00acdc;
 }
@@ -18,32 +18,32 @@ body {
   line-height: 100%;
 }
 
-ul.list li {
+.nav__item {
   height: 60px;
   margin: 0 8px;
   display: flex;
   text-transform: uppercase;
 }
 
-ul.list li a {
+.nav__link {
   height: 60px;
 }
 
-ul.list li a:link {
+.nav__link:link {
   text-decoration: none;
   color: black;
 }
 
-ul.list li a:visited {
+.nav__link:visited {
   text-decoration: none;
   color: black;
 }
 
-ul.list li a:hover {
+.nav__link:hover {
   color: var(--highlight-color);
 }
 
-ul.list li a.is-active {
+.is-active {
   color: var(--highlight-color);
   position: relative;
 }
